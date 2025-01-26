@@ -35,6 +35,12 @@ h2 {
     text-decoration: none;
     background-color: rgba(220, 212, 222, 0.714);
     font-size: 40px;
+    transition: all 0.3s ease-in;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
+    
+}
+.love a:hover{
+    background-color: rgb(145, 129, 129);
 }
 
 #no {
@@ -59,3 +65,18 @@ img{
     width: 40px;
     
 }
+img:hover{
+    
+    animation: beat 1s infinite ease-in-out;
+}
+@keyframes beat {
+    0%, 100% {
+      transform: scale(1);
+      filter:hue-rotate(45deg);
+    }
+    50% {
+      transform: scale(1.5);
+      filter:hue-rotate(0deg);
+      
+    }
+  }
